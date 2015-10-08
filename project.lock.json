@@ -3,13 +3,13 @@
   "version": 1,
   "targets": {
     "DNX,Version=v4.5.1": {
-      "Ensure.That/3.0.0": {
+      "Ensure.That/3.2.0": {
         "type": "package",
         "compile": {
-          "lib/dotnet/EnsureThat.vNext.dll": {}
+          "lib/net45/EnsureThat.vDinasour.dll": {}
         },
         "runtime": {
-          "lib/dotnet/EnsureThat.vNext.dll": {}
+          "lib/net45/EnsureThat.vDinasour.dll": {}
         }
       },
       "MyCouch/3.2.0": {
@@ -40,15 +40,19 @@
     }
   },
   "libraries": {
-    "Ensure.That/3.0.0": {
+    "Ensure.That/3.2.0": {
       "type": "package",
-      "sha512": "pOumA7GLJ1sg/p4vSTuMvQib0K0QXu3al6JQtVdJStdu5CGY5LuWdJS/MMvQeGuh1s3/VvlbufyVTPdF2WbMWA==",
+      "sha512": "ScCJyGH6juJcY7REO7CIEUhQR1wbh3SIT75RNjdbres4s7jOjTPDDBFPo+k7U9yOiIwxEbSgNaBIE48mZWLchw==",
       "files": [
-        "Ensure.That.3.0.0.nupkg",
-        "Ensure.That.3.0.0.nupkg.sha512",
+        "Ensure.That.3.2.0.nupkg",
+        "Ensure.That.3.2.0.nupkg.sha512",
         "Ensure.That.nuspec",
         "lib/dotnet/EnsureThat.vNext.dll",
         "lib/dotnet/EnsureThat.vNext.xml",
+        "lib/net45/EnsureThat.vDinasour.dll",
+        "lib/net45/EnsureThat.vDinasour.xml",
+        "lib/net46/EnsureThat.vNext.dll",
+        "lib/net46/EnsureThat.vNext.xml",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/EnsureThat.vDinasour.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/EnsureThat.vDinasour.xml"
       ]
@@ -96,8 +100,10 @@
   "projectFileDependencyGroups": {
     "": [
       "MyCouch >= 3.2.0",
-      "Ensure.That >= 3.0.0"
+      "Ensure.That >= 3.2.0"
     ],
-    "DNX,Version=v4.5.1": []
+    "DNX,Version=v4.5.1": [
+      "fx/System.Runtime "
+    ]
   }
 }

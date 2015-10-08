@@ -2,12 +2,16 @@
     "version": "1.0.0-*",
     "dependencies": {
         "MyCouch": "3.2.0",
-        "Ensure.That": "3.0.0"
+        "Ensure.That": "3.2.0"
     },
     "commands": {
         "run": "run"
     },
     "frameworks": {
-        "dnx451": {}
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Runtime": ""
+            }
+        }
     }
 }
